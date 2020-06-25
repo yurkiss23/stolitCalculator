@@ -1,0 +1,24 @@
+body{
+    padding-top: 3.5rem;
+}
+
+#add-row, #select-delete{
+    height: 50px;
+    border-top: 1px solid rgb(105, 105, 105, .2);
+}
+
+.label{
+    margin: 10px 0;
+}
+
+.add{
+    margin: 0 10px 0 0;
+}
+
+.thumbnail{
+    width: 80px;
+}
+
+#select_all{
+    margin: 10px 0;
+}
