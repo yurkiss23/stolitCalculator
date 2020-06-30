@@ -11,8 +11,13 @@
 <body>
     <div id="head-menu"></div>
 
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="calculator">
+                <h4>calculator</h4>
+            </div>
+        </div>
+        <!-- <div class="row">
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <h1>Hello</h1>
             </div>
@@ -31,24 +36,61 @@
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <h1>Hello</h1>
             </div>
-        </div>
+        </div> -->
         <div class="row">
-            <div class="col">
-                <h1>hello</h1>
+            <div class="col-sm-6">
+                <h5>data</h5>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputS" class="col-form-label">площа</label>
+                            <input type="text" class="form-control" id="inputS">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputLcokol" class="col-form-label">довжина цоколя</label>
+                            <input type="text" class="form-control" id="inputLcokol">
+                            <!-- <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                            </select> -->
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputLkut" class="col-form-label">довжина кутів</label>
+                            <input type="text" class="form-control" id="inputLkut">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="pinoplast" class="sr-only">Pinoplast</label>
+                            <input type="text" readonly class="form-control-plaintext" id="pinoplast" value="пінопласт">
+                        </div>
+                        <div class="form-group col-md-8 mb-2">
+                            <label for="inputPinoplast" class="sr-only">Pinoplast</label>
+                            <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> -->
+                            <select id="inputPinoplast" class="form-control">
+                            <option selected>вибрати...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-1 mb-2 d-flex justify-content-end">
+                            <button type="addPos" class="btn btn-primary mb-2">+</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="col">
-                <h1>hello</h1>
+            <div class="col-sm-6">
+                <h5>result</h5>
             </div>
         </div>
+        <!-- <h1>Hello</h1>
         <h1>Hello</h1>
         <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
+        <h1>Hello</h1> -->
     </div>
 
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
