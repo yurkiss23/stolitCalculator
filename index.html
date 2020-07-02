@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="X-UA-Compatible">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,40 +40,287 @@
         <div class="row">
             <div class="col-sm-6">
                 <h5>data</h5>
-                <form>
+                <form class="form-horizontal">
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                            <label for="inputS" class="col-form-label">площа</label>
-                            <input type="text" class="form-control" id="inputS">
+                            <label for="inputS" class="col-form-label form-control-sm label-fs">площа</label>
+                            <input type="text" class="form-control form-control-sm" id="inputS" placeholder="площа">
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputLcokol" class="col-form-label">довжина цоколя</label>
-                            <input type="text" class="form-control" id="inputLcokol">
+                            <label for="inputLcokol" class="col-form-label form-control-sm label-fs">довжина цоколя</label>
+                            <input type="text" class="form-control form-control-sm" id="inputLcokol" placeholder="довжина цоколя">
                             <!-- <select id="inputState" class="form-control">
                             <option selected>Choose...</option>
                             <option>...</option>
                             </select> -->
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputLkut" class="col-form-label">довжина кутів</label>
-                            <input type="text" class="form-control" id="inputLkut">
+                            <label for="inputLkut" class="col-form-label form-control-sm label-fs">довжина кутів</label>
+                            <input type="text" class="form-control form-control-sm" id="inputLkut" placeholder="довжина кутів">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3 mb-2">
                             <label for="pinoplast" class="sr-only">Pinoplast</label>
-                            <input type="text" readonly class="form-control-plaintext" id="pinoplast" value="пінопласт">
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="pinoplast" value="пінопласт">
                         </div>
-                        <div class="form-group col-md-8 mb-2">
-                            <label for="inputPinoplast" class="sr-only">Pinoplast</label>
-                            <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> -->
-                            <select id="inputPinoplast" class="form-control">
-                            <option selected>вибрати...</option>
-                            <option>...</option>
-                          </select>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputPinoplast" class="sr-only">Pinoplast</label>
+                                <select id="inputPinoplast" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                                <!-- <select id="inputPinoplast" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <div class="form-group col-md-1 mb-2 d-flex justify-content-end">
+                                        <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                    </div>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="form-group col-md-1 mb-2 d-flex justify-content-end">
-                            <button type="addPos" class="btn btn-primary mb-2">+</button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3 mb-2">
+                            <!-- <label for="xPolistirol" class="sr-only" style="height: 0rem;">xPolistirol</label> -->
+                            <p type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="xPolistirol">екструзійний полістирол</p>
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputxPolistirol" class="sr-only">xPolistirol</label>
+                                <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> -->
+                                <select id="inputxPolistirol" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="grunt" class="sr-only">Grunt</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="grunt" value="Грунтовки">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputGrunt" class="sr-only">Grunt</label>
+                                <select id="inputGrunt" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3 mb-2">
+                            <!-- <label for="mount" class="sr-only">Mount</label> -->
+                            <p type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="mount">Кріплення для теплоізоляції</p>
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputMount" class="sr-only">Mount</label>
+                                <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> -->
+                                <select id="inputMount" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="fresa" class="sr-only">Fresa</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="fresa" value="Фреза та заглушки">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputFresa" class="sr-only">Fresa</label>
+                                <select id="inputFresa" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="net" class="sr-only">Net</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="net" value="Сітка штукатурна">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputNet" class="sr-only">Net</label>
+                                <select id="inputNet" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="gluePin" class="sr-only">GluePin</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="gluePin" value="Клей для теплоізоляції">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputGluePin" class="sr-only">GluePin</label>
+                                <select id="inputGluePin" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="glueArm" class="sr-only">GlueArm</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="glueArm" value="Клей для теплоізоляції">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputGlueArm" class="sr-only">GlueArm</label>
+                                <select id="inputGlueArm" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="gruntFarb" class="sr-only">GruntFarb</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="gruntFarb" value="Грунт-фарби">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputGruntFarb" class="sr-only">GruntFarb</label>
+                                <select id="inputGruntFarb" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="profil" class="sr-only">Profil</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="profil" value="Профілі, маяки">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputProfil" class="sr-only">Profil</label>
+                                <select id="inputProfil" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="angls" class="sr-only">Angls</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="angls" value="Кутники">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputAngls" class="sr-only">Angls</label>
+                                <select id="inputAngls" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3 mb-2">
+                            <!-- <label for="xPolistirol" class="sr-only" style="height: 0rem;">xPolistirol</label> -->
+                            <p type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="shtuk">Силіконові та акрилові штукатурки</p>
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputxShtuk" class="sr-only">Shtuk</label>
+                                <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> -->
+                                <select id="inputxShtuk" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="farb" class="sr-only">Farb</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="farb" value="Фарби фасадні">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputFarb" class="sr-only">Farb</label>
+                                <select id="inputFarb" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-3 mb-2">
+                            <label for="tape" class="sr-only">Tape</label>
+                            <input type="text" readonly class="form-control-plaintext form-control-sm label-fs" id="tape" value="Скотч">
+                        </div>
+                        <div class="form-group col-md-9 mb-2">
+                            <div class="input-group">
+                                <label for="inputTape" class="sr-only">Tape</label>
+                                <select id="inputTape" class="form-control form-control-sm">
+                                    <option selected>вибрати...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button type="addPos" class="btn btn-outline-success btn-sm mb-2">+</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -82,10 +329,6 @@
                 <h5>result</h5>
             </div>
         </div>
-        <!-- <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1> -->
     </div>
 
     <script src="js/bootstrap.min.js"></script>

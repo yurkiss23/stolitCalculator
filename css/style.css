@@ -19,6 +19,15 @@ body{
     width: 80px;
 }
 
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.label-fs{
+    font-size: .75rem;
+}
+
 #select_all{
     margin: 10px 0;
 }
